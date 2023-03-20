@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
 class Person {
-  asyncFutureTest() {
+  void asyncFutureTest() {
     Future.delayed(const Duration(seconds: 2), () {
       return "hello future";
     }).then((value) {
@@ -16,7 +16,7 @@ class Person {
   }
 
   // 等待两个接口的数据返回
-  asyncFutureWait() {
+  void asyncFutureWait() {
     Future.wait([
       Future.delayed(const Duration(seconds: 2), () {
         return "hello";
@@ -47,7 +47,7 @@ class Person {
 
   // 消除回调地狱
 
-  removeCalls() {
+  void removeCalls() {
     login("userName", "pwd")
         .then((id) {
           return getUserInfo(id);
@@ -62,7 +62,7 @@ class Person {
   }
 
   // 使用async和await消除cb
-  userAsyncAwait() async {
+  void userAsyncAwait() async {
     try {
       String id = await login("userName", "pwd");
       String userInfo = await getUserInfo(id);
@@ -73,7 +73,7 @@ class Person {
   }
 
   //
-  streamTest() {
+  void streamTest() {
     Stream.fromFutures([
       Future.delayed(const Duration(seconds: 1), () {
         return "Hello1";
