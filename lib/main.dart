@@ -1,4 +1,6 @@
+import 'package:dq_flutter/widget/icon.dart';
 import 'package:dq_flutter/widget/image.dart';
+import 'package:dq_flutter/widget/switchCheckbox.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ImageWidget(),
+      home: const SwitchAndCheckBoxWidget(),
     );
   }
 }
@@ -66,4 +68,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-

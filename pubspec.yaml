@@ -90,3 +90,9 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
     - images/avatar.png
+
+  fonts:
+    - family: locationIcon
+      fonts:
+        - asset: fonts/location.ttf
+
