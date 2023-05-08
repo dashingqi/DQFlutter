@@ -33,9 +33,9 @@ class _IconWidgetState extends State<IconWidget> {
                   fontSize: 24.0,
                   color: Colors.yellow),
             ),
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
+              children: const [
                 Icon(Icons.accessible, color: Colors.green),
                 Icon(Icons.error, color: Colors.red),
                 Icon(Icons.inbox, color: Colors.yellow)

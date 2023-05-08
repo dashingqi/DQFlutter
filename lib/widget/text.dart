@@ -38,12 +38,12 @@ class _TextWidgetState extends State<TextWidget> {
                   text: "https://www.baidu.com",
                   style: TextStyle(color: Colors.amber)),
             ])),
-            const DefaultTextStyle(
-                style: TextStyle(color: Colors.red, fontSize: 20.0),
+            DefaultTextStyle(
+                style: const TextStyle(color: Colors.red, fontSize: 20.0),
                 textAlign: TextAlign.start,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
+                  children: const [
                     Text("hello world"),
                     Text("I am DashingQi"),
                     Text(
