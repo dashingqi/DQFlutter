@@ -1,3 +1,4 @@
+import 'package:dq_flutter/widget/form.dart';
 import 'package:dq_flutter/widget/icon.dart';
 import 'package:dq_flutter/widget/image.dart';
 import 'package:dq_flutter/widget/progress.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const TextFieldWidget(),
+      home: const FormWidget(),
     );
   }
 }
