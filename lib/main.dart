@@ -1,3 +1,4 @@
+import 'package:dq_flutter/layout/constraints/boxconstraints.dart';
 import 'package:dq_flutter/widget/form.dart';
 import 'package:dq_flutter/widget/icon.dart';
 import 'package:dq_flutter/widget/image.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const FormWidget(),
+      home: const BoxConstraintsWidget(),
     );
   }
 }
