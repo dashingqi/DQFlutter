@@ -1,4 +1,4 @@
-import 'package:dq_flutter/layout/constraints/boxconstraints.dart';
+import 'package:dq_flutter/layout/boxconstraints.dart';
 import 'package:dq_flutter/widget/form.dart';
 import 'package:dq_flutter/widget/icon.dart';
 import 'package:dq_flutter/widget/image.dart';
@@ -6,6 +6,8 @@ import 'package:dq_flutter/widget/progress.dart';
 import 'package:dq_flutter/widget/switchCheckbox.dart';
 import 'package:dq_flutter/widget/textfield.dart';
 import 'package:flutter/material.dart';
+
+import 'layout/rowcolumn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const BoxConstraintsWidget(),
+      home: const RowColumnWidget(),
     );
   }
 }
