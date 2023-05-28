@@ -1,4 +1,5 @@
 import 'package:dq_flutter/layout/boxconstraints.dart';
+import 'package:dq_flutter/layout/stackposition.dart';
 import 'package:dq_flutter/widget/form.dart';
 import 'package:dq_flutter/widget/icon.dart';
 import 'package:dq_flutter/widget/image.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const WrapFlowWidget(),
+      home: const StackPositionWidget(),
     );
   }
 }
