@@ -7,6 +7,7 @@ import 'package:dq_flutter/widget/switchCheckbox.dart';
 import 'package:dq_flutter/widget/textfield.dart';
 import 'package:flutter/material.dart';
 
+import 'layout/flex.dart';
 import 'layout/rowcolumn.dart';
 
 void main() {
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const RowColumnWidget(),
+      home: const FlexWidget(),
     );
   }
 }
