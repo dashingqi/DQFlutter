@@ -5,7 +5,7 @@ class RowColumnWidget extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
-    return _ContainerRowColumnState();
+    return _RowColumnWidgetState();
   }
 }
 
@@ -16,25 +16,29 @@ class _RowColumnWidgetState extends State<RowColumnWidget> {
       appBar: AppBar(
         title: const Text("row and column"),
       ),
-      body: const Center(
+      body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [Text("hello world"), Text("I am dashingqi")],
+              children: [
+                // 超出一行 会报错，使用流式布局可以解决这个问题
+                Text("hello world" * 100),
+                const Text("I am dashingqi")
+              ],
             ),
-            Row(
+            const Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.end,
               children: [Text("hello world"), Text("I am dashingqi")],
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.end,
               textDirection: TextDirection.rtl,
               children: [Text(" hello world"), Text(" i am dashingqi")],
             ),
-            Row(
+            const Row(
               crossAxisAlignment: CrossAxisAlignment.end,
               verticalDirection: VerticalDirection.down,
               children: [

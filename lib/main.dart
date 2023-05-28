@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 
 import 'layout/flex.dart';
 import 'layout/rowcolumn.dart';
+import 'layout/wrapflow.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const FlexWidget(),
+      home: const WrapFlowWidget(),
     );
   }
 }
