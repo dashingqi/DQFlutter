@@ -16,14 +16,14 @@ class _WrapFlowWidgetState extends State<WrapFlowWidget> {
       appBar: AppBar(
         title: const Text("Wrap Flow Layout"),
       ),
-      body: const Center(
+      body: Center(
           child: Column(
         children: [
           Wrap(
             spacing: 8.0,
             runSpacing: 4.0,
             alignment: WrapAlignment.start,
-            children: [
+            children:const [
               Chip(
                 label: Text("Blue"),
                 avatar: CircleAvatar(

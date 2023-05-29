@@ -28,20 +28,20 @@ class _RowColumnWidgetState extends State<RowColumnWidget> {
                 const Text("I am dashingqi")
               ],
             ),
-            const Row(
+            Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.end,
-              children: [Text("hello world"), Text("I am dashingqi")],
+              children: const [Text("hello world"), Text("I am dashingqi")],
             ),
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.end,
               textDirection: TextDirection.rtl,
-              children: [Text(" hello world"), Text(" i am dashingqi")],
+              children: const [Text(" hello world"), Text(" i am dashingqi")],
             ),
-            const Row(
+            Row(
               crossAxisAlignment: CrossAxisAlignment.end,
               verticalDirection: VerticalDirection.down,
-              children: [
+              children: const [
                 Text(
                   "hello world",
                   style: TextStyle(fontSize: 20.0),
@@ -73,9 +73,9 @@ class _ContainerRowColumnState extends State<RowColumnWidget> {
               children: <Widget>[
                 Container(
                   color: Colors.red,
-                  child: const Column(
+                  child: Column(
                     mainAxisSize: MainAxisSize.max, //无效，内层Colum高度为实际高度
-                    children: <Widget>[
+                    children: const <Widget>[
                       Text("hello world "),
                       Text("I am Jack "),
                     ],
