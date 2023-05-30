@@ -10,6 +10,7 @@ import 'package:flutter/material.dart';
 
 import 'layout/align.dart';
 import 'layout/flex.dart';
+import 'layout/layoutbuilder.dart';
 import 'layout/rowcolumn.dart';
 import 'layout/wrapflow.dart';
 
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const AlignWidget(),
+      home: const LayoutBuilderRoute(),
     );
   }
 }
