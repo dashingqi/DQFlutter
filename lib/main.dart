@@ -8,6 +8,7 @@ import 'package:dq_flutter/widget/switchCheckbox.dart';
 import 'package:dq_flutter/widget/textfield.dart';
 import 'package:flutter/material.dart';
 
+import 'container-widget/decoratedbox.dart';
 import 'container-widget/padding.dart';
 import 'layout/align.dart';
 import 'layout/flex.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const PaddingWidget(),
+      home: const DecoratedBoxWidget(),
     );
   }
 }
@@ -59,6 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
+
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
