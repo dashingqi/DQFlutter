@@ -8,6 +8,7 @@ import 'package:dq_flutter/widget/switchCheckbox.dart';
 import 'package:dq_flutter/widget/textfield.dart';
 import 'package:flutter/material.dart';
 
+import 'container-widget/ClipWidget.dart';
 import 'container-widget/container.dart';
 import 'container-widget/decoratedbox.dart';
 import 'container-widget/padding.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ContainerWidget(),
+      home: const ClipWidget(),
     );
   }
 }
